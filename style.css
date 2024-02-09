@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500;1,700&display=swap');
+
+:root {
+    --first-color: #13184e;
+    --second-color: #f7eded;
+    --third-color: #7c7cc0;
+    --white-color: #ffff;
+    --black-color: #0000;
+    --text-color: #f8f8f8d1;
+    --default-font: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+div ul li a{
+    color: var(--third-color);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    text-align: center;
+    color: var(--first-color)!important;
+
+}
+
+.navbar li button{
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-color);
+    color: var(--third-color);
+}
+.navbar li button:hover{
+    color:var(--white-color);
+    background-color: var(--third-color);
+    border: none;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    color: var(--first-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--default-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--first-color);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--second-color);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 3rem;
+}
+
+h4 {
+    color: var(--second-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    color: var(--first-color);
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color:var(--first-color);
+    border: 0.1875rem solid var(--first-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-transform: capitalize;
+    --webkit-transtion: all .4s ease-out 0s;
+    /* -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0; */
+    transition: all .4s ease-out 0s;
+}
+.white-btn{
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color:var(--white-color);
+    border: 0.1875rem solid var(--first-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--first-color);
+    text-transform: capitalize;
+    --webkit-transtion: all .4s ease-out 0s;
+    /* -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0; */
+    transition: all .4s ease-out 0s;
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--white-color);
+}
+.white-btn:hover{
+    border-color: transparent;
+    color: var(--first-color);
+    border-color: var(--first-color);
+}
+.wrapper{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+.white-head{
+    color: var(--white-color);
+}
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.nav-links{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:var(--first-color);
+    letter-spacing: 1px;
+}
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+.navigation-wrap .scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0,0.9);
+    transition: all .15s ease-in-out 0s;
+}
+.top-banner{
+    width: 100%;
+    background: url(./images/bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+
+}
+.counter-section{
+    background-color: var(--first-color);
+    padding: 2.5rem 0;
+}
+.counter-section{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.counter-section h2{
+    color: var(--white-color);
+}
+.blue{
+    color: var(--white-color);
+    background-color: var(--first-color);
+    margin: 15px auto;
+    padding-top: 15px;
+}
+.blue h2{
+    color: var(--white-color);
+}
+.blue p{
+    color: var(--white-color)!important;
+}
+.blue button{
+    border: 2px solid var(--white-color);
+    margin-bottom: 15px;
+}
+.blue button:hover{
+    border: 2px solid var(--first-color);
+    background-color: var(--white-color);
+    color: var(--first-color);
+}
+.navbar{
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-group .card{
+    border: none;
+    padding: 10px;
+	margin:16px;
+}
+.card:hover{
+    padding: 14px;
+	margin:17px;
+}
+#faq h2{
+text-align: center;
+border-top:3px solid var(--first-color);
+color: var(--first-color);
+}
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: var(--first-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--white-color);
+    color: var(--first-color);
+    border: 3px solid var(--first-color);
+}
+footer .footer-contain p{
+    color: var(--first-color);
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+
